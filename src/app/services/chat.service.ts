@@ -17,7 +17,7 @@ export class ChatService {
     );
 
     this.physicsGroupMessages.push(
-      new Message('piyush', 'physics', "$c = \\pm\\sqrt{a^2 + b^2}$", MessageType.LATEX),
+      new Message('piyush', 'physics', '$c = \\pm\\sqrt{a^2 + b^2}$', MessageType.LATEX),
       new Message('piyush', 'physics', '$\\sum_{i=1}^nx_i$', MessageType.LATEX),
       new Message('piyush', 'physics', '$x^2 + 5$', MessageType.LATEX),
       new Message('piyush', 'physics', '$\\sum_{i=1}^n(x_i^2 - \\overline{x}^2)$', MessageType.LATEX),
@@ -36,7 +36,7 @@ export class ChatService {
   sendNewMessage(message: string, group: string) {
     this.getMessagesGroup(group).push(
       new Message(UserService.currentUser().name, group, message, this.getMessageTypeFromGroup(group))
-    )
+    );
   }
 
   getMessageTypeFromGroup(group: string): MessageType {
