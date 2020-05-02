@@ -1,0 +1,30 @@
+:host {
+  /*width: 200px;*/
+}
+
+#messageBox {
+  background-color: lightcyan;
+  border-radius: 5px;
+  padding: 10px;
+  width: 300px;
+}
+#messageBox > #sender {
+  font-size: 1.4em;
+  text-transform: lowercase;
+}
+#messageBox > #timestamp {
+  font-size: .6em;
+  margin-bottom: 10px;
+}
+
+#messageBox > #content-container {
+  display: grid;
+  grid-template-columns: 1fr 10px;
+  grid-gap: 10px;
+  padding-right: 10px;
+}
+
+i:hover {
+  cursor: pointer;
+  color: darkviolet;
+}
